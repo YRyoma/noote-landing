@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Rocker's noote</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="main">
+	<div class="row1">
+		<div class="col1">
+			<h1>Rocker's noote</h1>
+		</div>
+		<div class="col2">
+			<p>ONE OK ROCKファンが、集まる場所</p>
+		</div>
+		<div class="col3">
+			<p>現在<span>179</span>Rockers！</p>
+		</div>
+		<div class="col4 clearfix">
+			<div class="col4-row1">
+				<p>Rocker's nooteはONE OK ROCKファンのためのコミュニティサイトです。情報や知識を発信し、たくさんのファンと繋がろう。</p>
+			</div>
+			<div class="col4-row2">
+				<form>
+					<input type="textbox" placeholder="メールアドレスで事前登録" class="textbox"><input type="submit" name="name" value="登録" class="btn">
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+ Parse.initialize("","")
+ var User = Parse.Object.extend("Post");
+
+ $("#email-form").submit(function(event){
+  event.preventDefault();
+  var email =$(#"email").val();
+
+  var newUser = new User();
+  newUser.set("email", email);
+
+  newPost.save({
+   success: function(){
+
+   }, error: function(error){
+    console.log("Error:"+error,message);
+   }
+  });
+</script>
+</body>
+</html>

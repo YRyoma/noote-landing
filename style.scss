@@ -1,0 +1,209 @@
+// 変数のインポート
+@import "variables";
+
+// ミックスインのインポート
+@import "mixins";
+
+// google fonts のURL
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+
+/* ************************************************
+ *  RESET
+ * ************************************************ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  height: 100%;
+}
+html {
+  height: 100%;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+
+
+/* ************************************************
+ *  LANDING-TOP
+ * ************************************************ */
+.main {
+  width: 100%;
+  background-color: #000;
+  background-image: url(img/smoked.jpg);
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+}
+.row1 {
+  .col1 {
+    padding: 200px 0 0 0;
+    h1 {
+      font-family: 'Permanent Marker', cursive;
+      font-size: 80px;
+      text-align: center;
+      @include mq-sp {
+        font-size: 40px;
+      }
+    }
+  }
+  .col2 {
+    margin: 20px 0 0 0;
+    p {
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      @include mq-sp {
+        font-size: 1.2em;
+      }
+    }
+  }
+  .col3 {
+    width: 700px;
+    height: 50px;
+    margin: 20px auto 0 auto;
+    @include mq-sp {
+      width: 80%;
+    }
+    p {
+      float: right;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      span {
+        font-size: 20px;
+        font-weight: bold;
+        color: red;
+      }
+    }
+  }
+  .col4 {
+    width: 70%;
+    margin: 100px auto 100px auto;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 10px;
+    padding: 30px;
+    @include mq-sp {
+      padding: 10px;
+    }
+    .col4-row1 {
+      width: 50%;
+      float: left;
+      @include mq-sp {
+        width: 100%;
+      }
+      p {
+        font-size: 14px;
+        padding: 5px 20px;
+        line-height: 1.2;
+        @include mq-sp {
+          margin: 20px 0 20px 0;
+        }
+      }
+    }
+    .col4-row2 {
+      width: 50%;
+      float: left;
+      @include mq-sp {
+        width: 100%;
+      }
+      form {
+        .textbox {
+          width: 300px;
+          height: 20px;
+          float: left;
+          border: solid 4px #5295e8;
+          border-radius: 6px 0 0 6px;
+          padding: 10px;
+          font-size: 15px;
+          outline: none;
+          @include mq-sp {
+            width: 60%;
+            font-size: 12px;
+            height: 14px;
+          }
+          @include mq-pc {
+            width: 70%;
+          }
+          @include mq-tb {
+            width: 60%;
+            font-size: 12px;
+          }
+        }
+        .btn {
+          width: 60px;
+          padding: 8.5px 10px;
+          float: left;
+          font-size: 15px;
+          background-color: #fff;
+          color: #5295e8;
+          border: none;
+          border-top: solid 4px #5295e8;
+          border-bottom: solid 4px #5295e8;
+          border-right: solid 4px #5295e8;
+          border-radius: 0 6px 6px 0;
+          font-weight: bold;
+          cursor: pointer;
+          outline: none;
+          @include mq-sp {
+            width: 25%;
+            font-size: 12px;
+            font-weight: none;
+            padding: 8px 10px;
+          }
+        }
+        .btn:hover {
+          background-color: #5295e8;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,224 @@
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+/* ************************************************
+ *  RESET
+ * ************************************************ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* ************************************************
+ *  LANDING-TOP
+ * ************************************************ */
+.main {
+  width: 100%;
+  background-color: #000;
+  background-image: url(img/smoked.jpg);
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+}
+
+.row1 .col1 {
+  padding: 200px 0 0 0;
+}
+.row1 .col1 h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 80px;
+  text-align: center;
+}
+@media only screen and (max-width: 629px) {
+  .row1 .col1 h1 {
+    font-size: 40px;
+  }
+}
+.row1 .col2 {
+  margin: 20px 0 0 0;
+}
+.row1 .col2 p {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+@media only screen and (max-width: 629px) {
+  .row1 .col2 p {
+    font-size: 1.2em;
+  }
+}
+.row1 .col3 {
+  width: 700px;
+  height: 50px;
+  margin: 20px auto 0 auto;
+}
+@media only screen and (max-width: 629px) {
+  .row1 .col3 {
+    width: 80%;
+  }
+}
+.row1 .col3 p {
+  float: right;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+.row1 .col3 p span {
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+}
+.row1 .col4 {
+  width: 70%;
+  margin: 100px auto 100px auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 30px;
+}
+@media only screen and (max-width: 629px) {
+  .row1 .col4 {
+    padding: 10px;
+  }
+}
+.row1 .col4 .col4-row1 {
+  width: 50%;
+  float: left;
+}
+@media only screen and (max-width: 629px) {
+  .row1 .col4 .col4-row1 {
+    width: 100%;
+  }
+}
+.row1 .col4 .col4-row1 p {
+  font-size: 14px;
+  padding: 5px 20px;
+  line-height: 1.2;
+}
+@media only screen and (max-width: 629px) {
+  .row1 .col4 .col4-row1 p {
+    margin: 20px 0 20px 0;
+  }
+}
+.row1 .col4 .col4-row2 {
+  width: 50%;
+  float: left;
+}
+@media only screen and (max-width: 629px) {
+  .row1 .col4 .col4-row2 {
+    width: 100%;
+  }
+}
+.row1 .col4 .col4-row2 form .textbox {
+  width: 300px;
+  height: 20px;
+  float: left;
+  border: solid 4px #5295e8;
+  border-radius: 6px 0 0 6px;
+  padding: 10px;
+  font-size: 15px;
+  outline: none;
+}
+@media only screen and (max-width: 629px) {
+  .row1 .col4 .col4-row2 form .textbox {
+    width: 60%;
+    font-size: 12px;
+    height: 14px;
+  }
+}
+@media only screen and (min-width: 780px) {
+  .row1 .col4 .col4-row2 form .textbox {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 630px) and (max-width: 779px) {
+  .row1 .col4 .col4-row2 form .textbox {
+    width: 60%;
+    font-size: 12px;
+  }
+}
+.row1 .col4 .col4-row2 form .btn {
+  width: 60px;
+  padding: 8.5px 10px;
+  float: left;
+  font-size: 15px;
+  background-color: #fff;
+  color: #5295e8;
+  border: none;
+  border-top: solid 4px #5295e8;
+  border-bottom: solid 4px #5295e8;
+  border-right: solid 4px #5295e8;
+  border-radius: 0 6px 6px 0;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+@media only screen and (max-width: 629px) {
+  .row1 .col4 .col4-row2 form .btn {
+    width: 25%;
+    font-size: 12px;
+    font-weight: none;
+    padding: 8px 10px;
+  }
+}
+.row1 .col4 .col4-row2 form .btn:hover {
+  background-color: #5295e8;
+  color: #fff;
+}

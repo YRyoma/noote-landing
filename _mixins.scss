@@ -1,0 +1,21 @@
+// Media Queries
+@mixin mq-pc {
+  // PC表示: 1070～
+  @media only screen and (min-width: $width-tablet ) {
+    @content;
+  }
+}
+
+@mixin mq-tb {
+  // タブレット表示: 568px ～ 768px
+  @media only screen and (min-width: $width-smartphone) and (max-width: $width-tablet - 1) {
+    @content;
+  }
+}
+
+@mixin mq-sp {
+  // スマートフォン表示: 568px～
+  @media only screen and (max-width: $width-smartphone - 1) {
+    @content;
+  }
+}
